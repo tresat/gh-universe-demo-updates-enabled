@@ -1,0 +1,34 @@
+# See https://github.com/gradle/actions/blob/main/docs/dependency-submission.md for more information
+
+name: Dependency Submission
+
+# Trigger this workflow on every pull request to only the main branch
+on:
+  push:
+    branches: [ 'main' ]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  dependency-submission:
+    runs-on: ubuntu-latest
+    steps:
+      # Step names are arbitrary and will appear in the GitHub actions UI
+    - name: Checkout sources
+      uses: actions/checkout@v4
+
+    - name: Set up the JDK used to run Gradle
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+      # Automatically create a build scan when dependencies are submitted, for further insights
+    - name: Generate and submit dependency graph
+      uses: gradle/actions/dependency-submission@v4
+      with:
+        build-scan-publish: true
+        build-scan-terms-of-use-url: "https://gradle.com/help/legal-terms-of-use"
+        build-scan-terms-of-use-agree: "yes"
