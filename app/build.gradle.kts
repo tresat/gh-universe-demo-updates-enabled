@@ -54,7 +54,7 @@ configurations.all {
         eachDependency {
             if (requested.group == "org.apache.avro" && requested.name == "avro") {
                 if (project.configurations.findByName("implementation") != null) {
-                    useTarget("org.apache.avro:avro:1.11.3")
+                    useTarget("org.apache.avro:avro:1.11.4")
                 }
             }
         }
