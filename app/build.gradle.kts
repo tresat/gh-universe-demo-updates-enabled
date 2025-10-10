@@ -66,7 +66,7 @@ configurations.all {
     resolutionStrategy.dependencySubstitution.all {
         requested.let {
             if (it is ModuleComponentSelector && it.group == "org.json") {
-                useTarget("net.minidev:json-smart:2.5.1")
+                useTarget("net.minidev:json-smart:2.5.2")
             }
         }
     }
