@@ -11,7 +11,7 @@ plugins {
 dependencies {
     // Dependency known to have vulnerability
     // - org.springframework:spring-core:6.2.10 - https://www.cve.org/CVERecord?id=CVE-2025-41249
-    implementation("org.springframework:spring-core:6.2.10")
+    implementation("org.springframework:spring-core:6.2.11")
 
     // Dependency with NO known vulnerabilities, but includes 2 vulnerable transitive dependencies, one of which is EXCLUDED
     // - org.bouncycastle:bcprov-jdk18on:1.76 - https://www.cve.org/CVERecord?id=CVE-2025-8885
