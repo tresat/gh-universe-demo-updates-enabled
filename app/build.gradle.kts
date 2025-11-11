@@ -16,7 +16,7 @@ dependencies {
     // Dependency with NO known vulnerabilities, but includes 2 vulnerable transitive dependencies, one of which is EXCLUDED
     // - org.bouncycastle:bcprov-jdk18on:1.76 - https://www.cve.org/CVERecord?id=CVE-2025-8885
     // - org.apache.commons:commons-compress:1.24.0 - several, including https://www.cve.org/CVERecord?id=CVE-2024-26308
-    implementation("io.minio:minio:8.5.8") {
+    implementation("io.minio:minio:8.6.0") {
         exclude("org.apache.commons", "commons-compress")
     }
 
