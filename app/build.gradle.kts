@@ -40,11 +40,11 @@ dependencies {
 // Constraints produce different vulnerable version as compile vs. runtime
 dependencies {
     constraints {
-        compileOnly("org.apache.logging.log4j:log4j-core:2.13.0")
-        testCompileOnly("org.apache.logging.log4j:log4j-core:2.13.0")
+        compileOnly("org.apache.logging.log4j:log4j-core:2.25.3")
+        testCompileOnly("org.apache.logging.log4j:log4j-core:2.25.3")
 
-        runtimeOnly("org.apache.logging.log4j:log4j-core:2.14.0")
-        testRuntimeOnly("org.apache.logging.log4j:log4j-core:2.14.0")
+        runtimeOnly("org.apache.logging.log4j:log4j-core:2.25.3")
+        testRuntimeOnly("org.apache.logging.log4j:log4j-core:2.25.3")
     }
 }
 
