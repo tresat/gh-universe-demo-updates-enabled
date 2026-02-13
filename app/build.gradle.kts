@@ -22,7 +22,7 @@ dependencies {
 
     // Dependency with known vulnerabilities, only present at RUNTIME
     // - org.apache.commons:commons-lang3:3.14.0 - https://www.cve.org/CVERecord?id=CVE-2025-48924
-    runtimeOnly("org.apache.commons:commons-lang3:3.14.0")
+    runtimeOnly("org.apache.commons:commons-lang3:3.18.0")
 
     // Dependency declaration specifies only a minimum version - but a vulnerable version will be RESOLVED by the resolutionStrategy
     // - org.apache.avro:avro:1.11.13 - https://www.cve.org/CVERecord?id=CVE-2024-47561
